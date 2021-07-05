@@ -1,0 +1,147 @@
+.cart-signin-container,
+.cart-signin-container-after {
+    width:100%;
+    padding: 20px 0;
+    display: block;
+   
+}
+
+
+/* FORM CONTAINER */
+.cart-signin-content,
+.cart-signin-success
+ {
+    max-width: 1000px;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-btn);
+    background-color: #fff;
+    margin:0     auto;
+}
+.cart-signin-success{
+        display: block;
+        text-align: center;
+        >h4:nth-child(1){
+            color:var(--text2-color)
+        }
+        >h4:nth-child(2){
+            font-size: 1.4rem;
+            color:var(--text1-color)
+        }
+}
+
+
+/* FORM */
+.cart-signin-form {
+    width: 50%;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+/* CART TITLE */
+.cart-signin-card-header {
+ 
+    top: -30px;
+    left: 10px;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 20px;
+    color:var(--text2-color);
+    
+  
+}
+
+
+/* LABELS */
+
+label {
+    font-size: 16px;
+}
+
+
+/* INPUTS */
+
+.cart-signin-form input {
+    width: 100%;
+    outline: none;
+    padding: 10px 0 10px 5px;
+    border: none;
+    border-radius: var(--border-btn);
+    border: 1px solid #7e7e7e4b;
+    background: transparent;
+    margin: 5px 0 10px 0;
+}
+
+.cart-signin-form input:focus {
+    width: 100%;
+    border: 1px solid var(--color1);
+}
+
+
+/* SUBMIT BTN */
+
+.cart-signin-submit-btn {
+    padding: 10px;
+    width: 102%;
+    outline: none;
+    border: 1px solid var(--color1-opaque);
+    border-radius: var(--border-btn);
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--color1);
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 20px auto;
+    transition: .5s ease;
+}
+
+.cart-signin-submit-btn:hover {
+    background-color: var(--color1);
+    color: white
+}
+
+
+/* FOOTER TEXT */
+
+.cart-signin-footer-text {
+    font-size: 16px;
+    color: var(--text1-color);
+}
+
+.cart-signin-footer-text a {
+    color: var(--color1);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cart-signin-footer-text a:hover {
+    text-decoration: underline;
+}
+
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 860px) {
+    .cart-signin-container {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .cart-signin-img {
+        display: none;
+    }
+    .cart-signin-content {
+        justify-content: center;
+    }
+    .cart-signin-form {
+        width: 70%;
+        max-width: 300px;
+    }
+    .cart-signin-content {
+        max-width: 500px;
+    }
+    
+}

@@ -1,0 +1,124 @@
+.main-text-container {
+  position: absolute;
+  padding: 0 40px;
+  top: 110px;
+  z-index: 1;
+}
+
+.main-text1,
+.main-text2 {
+  font-size: 6vw;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: #fff;
+  width: 90%;
+}
+
+.main-text1 {
+  width: 100%;
+}
+
+.second-text {
+  font-size: 1.3vw;
+  letter-spacing: 5px;
+  padding: 10px;
+  color: #fff;
+}
+
+.publicity-container {
+  height: 300px;
+}
+/* BTN */
+
+// .btn1 {
+//     border: none;
+//     outline: none;
+//     font-size: 18px;
+//     font-weight: bold;
+//     color: white;
+//     background-color: #811E23;
+//     letter-spacing: 2px;
+//     width: 140px;
+//     border-radius: 4px;
+//     padding: 10px;
+//     cursor: pointer;
+//     border: 2px solid #811E23;
+//     transition: .5s ease;
+//     cursor: pointer;
+//     margin: 20px 20px 10px 0;
+// }
+
+// .btn1:hover {
+//     background-color: #811e23;
+//     color: white
+// }
+
+// .btn2 {
+//     border: none;
+//     outline: none;
+//     font-size: 18px;
+//     font-weight: bold;
+//     color: white;
+//     letter-spacing: 2px;
+//     width: 140px;
+//     border-radius: 4px;
+//     padding: 10px;
+//     cursor: pointer;
+//     border: 2px solid white;
+//     background-color: transparent;
+//     transition: .5s ease;
+//     cursor: pointer;
+//     margin: 20px 20px 10px 0;
+// }
+
+// .btn2:hover {
+//     background-color: var(--color1);
+//     border: 2px solid var(--color1);
+//     color: white;
+// }
+
+@media screen and (max-width: 1400px) {
+  .main-text1,
+  .main-text2 {
+    font-size: 9vw;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .main-text-container {
+    padding: 0 0 0 20px;
+    top: 20%;
+  }
+  .main-text1,
+  .main-text2 {
+    font-size: 14vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .main-text-container {
+    padding: 0 0 0 20px;
+    top: 20%;
+  }
+  .main-text1,
+  .main-text2 {
+    font-size: 14vw;
+  }
+  .second-text {
+    font-size: 1.4vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main-text-container {
+    padding: 0 0 0 20px;
+    top: 20%;
+  }
+  .main-text1,
+  .main-text2 {
+    font-size: 14vw;
+  }
+  .second-text {
+    font-size: 3vw;
+  }
+}

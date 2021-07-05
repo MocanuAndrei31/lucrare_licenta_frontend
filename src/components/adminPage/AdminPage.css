@@ -1,0 +1,239 @@
+.admin-page-container {
+  width: calc(100%-200px);
+  margin-left: 200px;
+  padding-top: 95px;
+  background-color: var(--background);
+}
+
+.admin-page-navbar {
+  width: 100%;
+  padding: 20px 0 0;
+  text-align: center;
+}
+
+.admin-page-navbar > button {
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  background-color: #eebb02;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.admin-page-navbar > button:nth-child(1) {
+  border-radius: 10px 0 0 10px;
+}
+
+.admin-page-navbar > button:nth-child(2) {
+  border-radius: 0 10px 10px 0;
+}
+
+.admin-page-navbar button:hover {
+  background-color: #eebb02;
+  opacity: 0.8;
+}
+
+.admin-page-navbar button:active {
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+}
+
+.admin-page-title {
+  color: #002845;
+  text-align: center;
+}
+
+.admin-page-title h3 {
+  margin-bottom: 0;
+}
+
+.table-container {
+  height: 100vh;
+  max-width: 1075px;
+  padding: 10px 10px 20px;
+  overflow: auto;
+  margin: auto;
+}
+
+.table-container::-webkit-scrollbar {
+  display: none;
+}
+
+.admin-page-container > h2 {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  height: 95px;
+  width: calc(100% - 200px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  background: var(--color2);
+  margin: 0;
+  color: var(--color1);
+  font-weight: bold;
+}
+
+.admin-page-container > h2 > span {
+  color: #fff;
+  margin-right: 5px;
+}
+
+.table-head,
+.table-body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2fr)[9];
+      grid-template-columns: repeat(9, 2fr);
+  grid-gap: 5px;
+  margin: 20px 20px 10px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+}
+
+.table-head {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.table-details {
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  grid-gap: 20px;
+  margin: 20px auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: var(--text-color);
+  color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+}
+
+.table-head > h4,
+.table-body > h5,
+.table-details > h5 {
+  overflow-y: scroll;
+  width: 100%;
+  padding: 0 5%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.table-head > h4 {
+  color: #eebb02;
+}
+
+.table-btn {
+  display: block;
+}
+
+.table-btn button {
+  width: 80%;
+  margin: 5%;
+  padding: 10px 0;
+  outline: none;
+  border: none;
+  border-radius: var(--border-btn);
+  cursor: pointer;
+}
+
+.table-btn .incomplete {
+  background-color: #e6564a;
+  border: 2px solid #e6564a;
+  color: #fff;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.table-btn .incomplete:hover {
+  background-color: #c93232;
+  border: 2px solid #c93232;
+  color: #fff;
+}
+
+.table-btn .complete {
+  background-color: #5ad883;
+  border: 2px solid #5ad883;
+  color: #fff;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.table-btn .complete:hover {
+  background-color: #4ab96f;
+  border: 2px solid #4ab96f;
+  color: #fff;
+}
+
+.table-btn button:nth-child(2) {
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  background: transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.table-btn button:nth-child(2):hover {
+  background-color: var(--text-color);
+  color: #fff;
+}
+
+@media only screen and (max-width: 860px) {
+  .admin-page-container {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .admin-page-container > h2 {
+    font-size: 1.4rem;
+    width: 100%;
+  }
+  .admin-page-navbar > button {
+    padding: 10px 10px;
+    font-size: 10px;
+  }
+  .table-head,
+  .table-body {
+    margin: 20px 0px;
+  }
+  .table-head > h4 {
+    font-size: 0.3rem;
+  }
+  .table-body > h5 {
+    font-size: 0.2rem;
+  }
+  .table-btn button {
+    font-size: 5px;
+    width: 30px;
+    padding: 3px;
+    margin: 0 10px 3px 0;
+    border-radius: 4px;
+  }
+}
+/*# sourceMappingURL=AdminPage.css.map */

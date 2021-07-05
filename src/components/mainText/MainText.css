@@ -1,0 +1,78 @@
+.main-text-container {
+  position: absolute;
+  padding: 0 40px;
+  top: 110px;
+  z-index: 1;
+}
+
+.main-text1,
+.main-text2 {
+  font-size: 6vw;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: #fff;
+  width: 90%;
+}
+
+.main-text1 {
+  width: 100%;
+}
+
+.second-text {
+  font-size: 1.3vw;
+  letter-spacing: 5px;
+  padding: 10px;
+  color: #fff;
+}
+
+.publicity-container {
+  height: 300px;
+}
+
+/* BTN */
+@media screen and (max-width: 1400px) {
+  .main-text1,
+  .main-text2 {
+    font-size: 9vw;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .main-text-container {
+    padding: 0 0 0 20px;
+    top: 20%;
+  }
+  .main-text1,
+  .main-text2 {
+    font-size: 14vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .main-text-container {
+    padding: 0 0 0 20px;
+    top: 20%;
+  }
+  .main-text1,
+  .main-text2 {
+    font-size: 14vw;
+  }
+  .second-text {
+    font-size: 1.4vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main-text-container {
+    padding: 0 0 0 20px;
+    top: 20%;
+  }
+  .main-text1,
+  .main-text2 {
+    font-size: 14vw;
+  }
+  .second-text {
+    font-size: 3vw;
+  }
+}
+/*# sourceMappingURL=MainText.css.map */

@@ -1,0 +1,76 @@
+.chooseVoucher-container {
+  > h4 {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: var(--text2-color);
+    color: var(--color3);
+  }
+
+  .voucher-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    > div {
+      width: 105px;
+      margin: 10px 30px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      padding: 15px;
+      border-radius: 10px;
+
+      > h3 {
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+      }
+      > button,
+      .disabled,
+      .active {
+        width: 100%;
+        border: none;
+        border-radius: 7px;
+        border: 1px solid #edb900;
+        background-color: transparent;
+        margin: 0 auto 0;
+        cursor: pointer;
+        color: #edb900;
+        outline: none;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: 0.5s ease;
+        margin: 20px 0 0;
+        &:hover {
+          background-color: #edb900;
+          color: #fff;
+        }
+      }
+      .active {
+        border: 1px solid var(--added);
+        background-color: var(--added);
+        color: var(--color3);
+        &:hover {
+          background-color: var(--added);
+          color: var(--color3);
+        }
+      }
+    }
+
+    .inactive {
+      > h3 {
+        color: var(--text2-color) !important;
+      }
+      .disabled {
+        border: 1px solid var(--text2-color);
+        color: var(--text2-color);
+        cursor: default;
+        &:hover {
+          background-color: transparent;
+          color: var(--text2-color);
+        }
+      }
+    }
+  }
+}

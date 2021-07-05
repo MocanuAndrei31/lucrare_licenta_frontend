@@ -1,0 +1,199 @@
+@keyframes fade {
+    from {
+      opacity: 0;
+      transform: scale3D(0.95, 0.95, 0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale3D(1, 1, 1);
+    }
+  }
+  
+  .Form {
+    position: relative;
+    animation: fade 200ms ease-out;
+  }
+  
+  .FormGroup {
+    // margin: 0 15px 20px;
+    // padding: 0;
+    border-style: none;
+    background-color:var(--color3);
+    will-change: opacity, transform;
+    border-radius: var(--border-btn);
+  }
+
+ 
+
+  .FormRowLabel {
+    width: 15%;
+    min-width: 70px;
+    padding: 11px 0;
+    color: var(--text1-color);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  @keyframes void-animation-out {
+    0%,
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .FormRowInput:-webkit-autofill {
+    -webkit-text-fill-color: var(--text1-color);
+    /* Hack to hide the default webkit autofill */
+    transition: background-color 100000000s;
+    animation: 1ms void-animation-out;
+  }
+  
+  .FormRowInput {
+    font-size: 16px;
+    width: 100%;
+    color: var(--text1-color);
+    background-color: transparent;
+    animation: 1ms void-animation-out;
+    outline: none;
+    padding: 10px 0 10px 5px;
+    border: none;
+    border-radius: var(--border-btn);
+    border: 1px solid var(--text2-color);
+    background: transparent;
+    margin: 5px 0 10px 0;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  
+  .FormRowInput::placeholder {
+    font-size: 12px;
+    color: var(--text1-color);
+  }
+  
+  // STYLE CARD INPUT
+  .StripeElement--webkit-autofill {
+    background: transparent !important;
+  }
+  
+  .StripeElement {
+    width: 100%;
+  }
+
+  .FormRow-Card{
+    width: 100%;
+    color: var(--text1-color);
+    background-color: transparent;
+    animation: 1ms void-animation-out;
+    outline: none;
+    padding: 10px 0 10px 5px;
+    border: none;
+    border-radius: var(--border-btn);
+    border: 1px solid var(--text2-color);
+    background: transparent;
+    box-sizing: border-box;
+  }
+
+
+  // SUBMIT BTN 
+  .SubmitButton {
+    display: block;
+    font-size: 16px;
+    width: calc(100% - 30px);
+    height: 40px;
+    margin: 40px 15px 0;
+    background-color: transparent;
+    // box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08),
+    //   inset 0 1px 0 #ffb9f6;
+    border-radius: var(--border-btn);
+    outline: none;
+    border:none;
+    border: 1px solid #666ee8;
+    color: #666ee8;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s ease;
+    // transition: all 100ms ease-in-out;
+    // will-change: transform, background-color, box-shadow;
+      &:hover{
+        background-color: #666ee8;
+        color: var(--color3);
+      }
+  }
+  
+  .SubmitButton.SubmitButton--error {
+    transform: translateY(15px);
+  }
+  .SubmitButton.SubmitButton--error:active {
+    transform: scale(0.99) translateY(15px);
+  }
+  
+  .SubmitButton:disabled {
+    opacity: 0.5;
+    cursor: default;
+    background-color:var(--text2-color);
+    border: 1px solid var(--text2-color);
+    box-shadow: none;
+    color: var(--color3);
+      &:hover{
+       background-color:var(--text2-color);
+       color: var(--color3);
+    }
+  }
+
+  // ERR MSG
+  
+  .ErrorMessage {
+    color: var(--err-color);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    // padding: 0 15px;
+    font-size: 12px;
+    margin-top: 0px;
+    width: 100%;
+    transform: translateY(-15px);
+    opacity: 0;
+    animation: fade 150ms ease-out;
+    animation-delay: 50ms;
+    animation-fill-mode: forwards;
+    will-change: opacity, transform;
+  }
+  
+  .ErrorMessage svg {
+    margin-right: 10px;
+  }
+  
+  .Result {
+    margin-top: 50px;
+    text-align: center;
+    animation: fade 200ms ease-out;
+  }
+  
+  .ResultTitle {
+    color: var(--warning-color);
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 17px;
+    text-align: center;
+  }
+  
+  .ResultMessage {
+    color: var(--warning-color);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    line-height: 1.6em;
+    text-align: center;
+  }
+  
+  .ResetButton {
+    border: 0;
+    cursor: pointer;
+    background: transparent;
+  }
+
+
+
+
+

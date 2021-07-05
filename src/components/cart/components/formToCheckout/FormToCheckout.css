@@ -1,0 +1,283 @@
+.checkout-container {
+  position: relative;
+  margin-left: 200px;
+  width: calc(100% - 200px);
+  padding-top: 95px;
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+.checkout-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 10px;
+}
+
+.checkout-layout > div {
+  margin: 5% 10px;
+}
+
+.checkout-layout > div::-webkit-scrollbar {
+  display: none;
+}
+
+.checkout-layout > div > form {
+  width: 100%;
+  max-width: 400px;
+  min-width: 300px;
+  margin: 5% auto;
+  padding: 2%;
+  background-color: #fff;
+}
+
+.checkout-layout > div > form .msg-warning-ck {
+  margin: 0;
+  color: var(--warning-color);
+  padding: 0px 0 10px 0;
+}
+
+.checkout-layout > div > form .msg-ok-ck {
+  margin: 0;
+  color: var(--success-color);
+  padding: 0px 0 10px 0;
+}
+
+.checkout-layout > div > h3 {
+  text-align: center;
+  padding: 0 2%;
+  margin: 0;
+  color: var(--text1-color);
+}
+
+/* FORM CHECKOUT */
+.form-s,
+.form-l {
+  position: relative;
+  width: 50%;
+  min-height: 800px;
+  max-height: 900px;
+  min-width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: var(--border-btn);
+}
+
+.form-s {
+  min-height: 550px;
+  max-height: 620px;
+}
+
+.pay-step {
+  margin: 10% 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.step-left,
+.step-right {
+  width: 50%;
+  text-align: end;
+}
+
+.step-left {
+  text-align: start;
+}
+
+.step-left > button,
+.step-right > button {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 10px;
+  background-color: transparent;
+  border: 2px solid #002845;
+  border-radius: var(--border-btn);
+  color: #002845;
+  cursor: pointer;
+  outline: none;
+  letter-spacing: 1px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.step-left > button > i,
+.step-right > button > i {
+  margin: 0 5px;
+}
+
+.step-left > button:hover,
+.step-right > button:hover {
+  background-color: #002845;
+  border: 2px solid #002845;
+  color: #fff;
+}
+
+.step-left > button {
+  border: 2px solid #bbbbbb;
+  color: #bbbbbb;
+  padding: 10px 25px;
+}
+
+.step-left > button:hover {
+  background-color: #002845;
+  border: 2px solid #002845;
+  color: #fff;
+}
+
+.style-form > input,
+.style-form > select,
+.style-form > div > input,
+.style-form > div > select {
+  width: 100%;
+  outline: none;
+  padding: 10px 0 10px 5px;
+  border: none;
+  border-radius: var(--border-btn);
+  border: 1px solid #002845;
+  background: transparent;
+  margin: 5px 0 10px 0;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.style-form > input:focus,
+.style-form > div > input:focus {
+  border: 1px solid #002845;
+  width: 100%;
+}
+
+.react-calendar {
+  z-index: 1;
+  position: absolute;
+  width: 300px !important;
+  margin: 0 auto 10px !important;
+  border-radius: var(--border-btn);
+  max-width: 100%;
+  border: 1px solid var(--text2-color) !important;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+}
+
+.react-calendar__navigation {
+  margin: 5px;
+}
+
+.react-calendar__navigation > button {
+  font-size: 14px !important;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #002845 !important;
+  border-radius: var(--border-btn);
+  color: var(--color3);
+}
+
+.react-calendar__tile--now {
+  background: #002845 !important;
+  color: var(--color3) !important;
+  border-radius: var(--border-btn);
+}
+
+.react-calendar__tile--active {
+  background: var(--color1) !important;
+  border-radius: var(--border-btn);
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: #e6e6e6;
+  border-radius: var(--border-btn);
+}
+
+.res-stripe > div {
+  background-color: rgba(255, 255, 255, 0.904);
+}
+
+.res-stripe .pay-btn-enabled,
+.res-stripe .pay-btn-disabled,
+.res-stripe > div > button:last-child {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: var(--border-btn);
+  border: 1px solid #002845;
+  background-color: rgba(255, 255, 255, 0.904);
+  margin: 10px auto 10px;
+  cursor: pointer;
+  color: #002845;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.res-stripe .pay-btn-enabled:hover,
+.res-stripe .pay-btn-disabled:hover,
+.res-stripe > div > button:last-child:hover {
+  background-color: #002845;
+  color: #fff;
+}
+
+.res-stripe > div > button:last-child {
+  border: 2px solid #bbbbbb;
+  color: #bbbbbb;
+}
+
+.res-stripe > div > button:last-child > i {
+  margin: 0 5px;
+}
+
+.res-stripe > div > button:last-child:hover {
+  background-color: #002845;
+  border: 2px solid #002845;
+  color: #fff;
+}
+
+.res-stripe .pay-btn-disabled {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: var(--text-color);
+  border: 1px dotted var(--text-color);
+}
+
+.res-stripe .pay-btn-disabled:hover {
+  background-color: transparent;
+  color: var(--text-color);
+}
+
+@media only screen and (max-width: 860px) {
+  .checkout-container {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .checkout-layout {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .checkout-layout > div {
+    margin: 5% auto;
+  }
+  .checkout-layout > div::-webkit-scrollbar {
+    display: none;
+  }
+  .checkout-layout .pay-container {
+    height: auto;
+  }
+  .pay-container,
+  .form-l,
+  .form-s {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=FormToCheckout.css.map */

@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+html {
+    font-family: 'Libre Franklin', sans-serif!important;
+    /* scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; */
+    /* font-family: 'Montserrat', sans-serif!important; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    border: 0;
+    margin: 0;
+    --background: rgb(245, 245, 245);
+    --color1: rgb(129, 30, 35);
+    --color1-opaque: rgba(129, 30, 35, 0.5);
+    --color2: rgb(253, 180, 141);
+    --color2-opaque: rgb(253, 180, 141, 0.8);
+    --color3: #fff;
+    --blur: blur(8px);
+    /* Btn */
+    --color-btn: rgb(129, 30, 35);
+    --border-btn: 10px;
+    --color-border: rgba(128, 128, 128, 0.3);
+    /* Text */
+    --text-color: grey;
+    --text1-color:#606975;
+    --text2-color:#6c72859d;
+    --err-color:#e03f3ffd;
+    --success-color:#69d86f;
+    --warning-color: #FFCA36;
+    --added:#03bf74;
+    --shadow: 2px 4px 15px 0 rgba(0,0,0,.1);
+    /* SideBar Links */
+    --hover:  rgb(253, 180, 141);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 100;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2 {
+    font-size: 2.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+h3 {
+    font-size: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-container {
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    overflow: visible;
+    width: 5px;
+}
+
+ ::-webkit-scrollbar:horizontal {
+    height: 5px;
+}
+
+ ::-webkit-scrollbar-button {
+    width: 5px;
+    height: 5px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    overflow: visible;
+    background:#b1b1b1;
+    border: none;
+    border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #7d7d7d;
 }

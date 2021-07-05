@@ -1,0 +1,124 @@
+.products-container {
+  width: calc(100% - 200px);
+  min-height: 100vh;
+  margin-left: 200px;
+  padding-top: 95px;
+  background: var(--background);
+}
+
+.products-container .category-title > h3 {
+  margin: 10px 0 0;
+  color: #eebb02;
+  text-align: center;
+}
+
+.products-subcat {
+  padding: 20px 25px;
+  color: #002845;
+}
+
+.products-subcat div > h4 {
+  position: relative;
+  margin: 0;
+  font-size: 20px;
+}
+
+.products-subcat div > hr {
+  border: none;
+  border-bottom: 0.5px solid #d4d4d49e;
+}
+
+.products-subcat > h4:last-child {
+  text-align: center;
+}
+
+.products-sections1,
+.products-sections2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  grid-gap: 50px;
+  padding: 50px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+}
+
+.products-sections2 {
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  grid-gap: 10px;
+  padding: 30px 10px;
+}
+
+.view-filter {
+  width: 100%;
+  text-align: center;
+}
+
+.view-filter > i {
+  margin: 10px;
+  font-size: 20px;
+  color: var(--color3);
+  background-color: #d1d1d1;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: var(--border-btn);
+}
+
+.view-filter > i:hover {
+  background-color: #b6b6b6;
+}
+
+.activ {
+  border: 1px solid var(--color2);
+}
+
+@media only screen and (max-width: 860px) {
+  .products-container {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .view-filter {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1850px) {
+  .products-sections1 {
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  .products-sections1 {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .products-sections1 {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .products-sections1 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .products-sections2 {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+}
+/*# sourceMappingURL=ProductsPage.css.map */

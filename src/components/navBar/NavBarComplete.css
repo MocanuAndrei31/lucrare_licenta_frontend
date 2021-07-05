@@ -1,0 +1,61 @@
+.navbar-complete {
+  position: relative;
+  height: 95px;
+  width: calc(100% - 200px);
+  margin-left: 200px;
+  background-color: #002845;
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar-complete > h6 {
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: var(--color3);
+  color: var(--color2);
+  letter-spacing: 1px;
+  bottom: 0%;
+}
+
+.navbar-complete > a > img {
+  visibility: hidden;
+}
+
+/* RESPONSIVENESS */
+@media only screen and (max-width: 860px) {
+  .navbar-complete {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .navbar-complete > a > img {
+    visibility: visible;
+    height: 75px;
+    margin: 5px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar-complete > h6 {
+    font-size: 6px;
+  }
+}
+/*# sourceMappingURL=NavBarComplete.css.map */

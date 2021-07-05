@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import "./App.css";
+import loadingGif from ".//assets/loadingGif.gif";
+
+import { withRouter } from "react-router-dom";
+
+// REDUX
+import { useDispatch, useSelector } from "react-redux";
+import { fetchProducts } from "./store/actions/productsActions";
+import { fetchUser } from "./store/actions/authActions";
+
+import Routes from "./router";
 
 function App() {
+  const isLoading = useSelector(({ auth }) => auth.isLoading);
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchProducts());
+    dispatch(fetchUser());
+  }, [dispatch]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-container">
+      {isLoading ? (
+        <div className="loading">
+          <img src={loadingGif} alt="Loading" />
+        </div>
+      ) : (
+        <Routes />
+      )}
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);

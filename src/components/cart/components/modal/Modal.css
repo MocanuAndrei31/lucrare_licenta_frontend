@@ -1,0 +1,137 @@
+.modal-stripe-btn {
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  border-radius: var(--border-btn);
+  border: 1px solid #666ee8;
+  background-color: transparent;
+  margin: 10px auto 10px;
+  cursor: pointer;
+  color: var(--color3);
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: #666ee8;
+}
+
+.modal-stripe-btn:hover {
+  background-color: #4c52a7;
+  color: #fff;
+}
+
+/* MODAL (background) */
+.modal-stripe {
+  position: fixed;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 95px;
+  left: 0;
+  top: 0;
+  width: calc(100% - 200px);
+  margin-left: 200px;
+  height: calc(100% - 95px);
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-stripe-header {
+  text-align: center;
+  padding: 2px 16px;
+  background-color: transparent;
+  color: var(--text1-color);
+}
+
+.modal-stripe-header .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #cccccc;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.modal-stripe-header .close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-stripe-header > h3 > span {
+  margin: 10px 0;
+  color: #666ee8;
+}
+
+/* Modal Content */
+.modal-stripe-content {
+  position: relative;
+  background-color: var(--color3);
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  border-radius: var(--border-btn);
+  /* width: 50%; */
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.modal-stripe-body {
+  padding-bottom: 10px;
+}
+
+.modal-stripe-footer {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* RESPONSIVENESS */
+@media only screen and (max-width: 860px) {
+  .modal-stripe {
+    width: 100%;
+    margin-left: 0;
+  }
+  .modal-stripe-content {
+    width: 300px;
+  }
+}
+/*# sourceMappingURL=Modal.css.map */

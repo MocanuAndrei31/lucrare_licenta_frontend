@@ -1,0 +1,189 @@
+.admin-main-container {
+  width: 100%;
+  max-width: 2500px;
+  margin: auto;
+}
+
+.user-card-container1,
+.admin-card-container,
+.user-card-container2 {
+  position: relative;
+  width: 210px;
+  height: 400px;
+  border-radius: var(--border-btn);
+  padding: 10px;
+  background-color: #fff;
+  text-align: center;
+  // border: 1px solid var(--color-border);
+  transition: 0.5s ease;
+}
+
+.user-card-container1:hover,
+.admin-card-container:hover,
+.user-card-container2 {
+  box-shadow: var(--shadow);
+}
+
+// IMG
+
+.product-img {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.product-img > a > img {
+  position: absolute;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.product-img:hover a > img {
+  -webkit-transform: translate(-50%, -50%) scale(3);
+  -moz-transform: translate(-50%, -50%) scale(3);
+  transform: translate(-50%, -50%) scale(3);
+}
+
+// DESCRIPTION
+
+.user-card-desc {
+  position: relative;
+  padding: 20px;
+  font-weight: bold;
+  color: #002845;
+  letter-spacing: 1px;
+  height: 20px;
+  width: 80%;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 10px;
+  color: #002845;
+}
+
+.discount {
+  color: var(--err-color);
+  margin-top: 0px;
+  padding: 0px 10px 10px;
+  height: 14px;
+}
+
+.totale {
+  width: 50%;
+  text-align: start;
+}
+
+.price {
+  width: 50%;
+  text-align: end;
+  font-weight: 600;
+}
+
+.price span {
+  padding: 0 5px 0 0;
+}
+
+// ADD TO CART BTN
+
+.add-btn,
+.add-btn-disabled,
+.added-btn {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: var(--border-btn);
+  border: 1px solid #002845;
+  background-color: transparent;
+  margin: 0 auto 0;
+  cursor: pointer;
+  color: #002845;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.added-btn {
+  background-color: var(--added);
+  border: 1px solid var(--added);
+  color: #fff;
+}
+
+.add-btn-disabled {
+  background-color: transparent;
+  box-shadow: none;
+  color: var(--text-color);
+  border: 1px dotted #002845;
+}
+
+.add-btn:hover {
+  background-color: #002845;
+  color: #fff;
+}
+
+// VIEW BLOCK
+.user-card-container2 {
+  width: 140px;
+  height: 280px;
+  .product-img {
+    position: relative;
+    height: 120px;
+    overflow: hidden;
+    cursor: pointer;
+    a > img {
+      position: absolute;
+      height: 90px;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      -webkit-transition: 0.5s ease;
+      -moz-transition: 0.5s ease;
+      transition: 0.5s ease;
+    }
+  }
+  .user-card-desc {
+    font-size: 0.7rem;
+  }
+  .totale {
+    font-size: 0.6rem;
+  }
+
+  .price {
+    font-size: 0.7rem;
+  }
+  .price-container {
+    margin-top: 22px;
+    // margin:0;
+    padding: 0 10px 5px;
+  }
+  .discount {
+    margin: 0;
+    padding: 0 10px 5px;
+  }
+  .add-btn,
+  .add-btn-disabled,
+  .added-btn {
+    padding: 12px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+}

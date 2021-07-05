@@ -1,0 +1,435 @@
+/* MODAL @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* MODAL BTN */
+.admin-btn {
+  position: fixed;
+  z-index: 2;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #002845;
+  opacity: 0.7;
+  font-size: 30px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.admin-btn:hover {
+  opacity: 1;
+}
+
+.admin-btn span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  pointer-events: none;
+}
+
+.admin-btn:active {
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+}
+
+.admin-tooltip {
+  position: absolute;
+  top: -40px;
+  right: 0px;
+  font-size: 12px;
+  padding: 5px 10px;
+  height: 20px;
+  width: 100px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  opacity: 0.6;
+  visibility: hidden;
+}
+
+.admin-btn:hover .admin-tooltip {
+  -webkit-nimation: show 0.2s linear forwards;
+  -webkit-animation: show 0.2s linear forwards;
+          animation: show 0.2s linear forwards;
+}
+
+@-webkit-keyframes show {
+  0% {
+    visibility: hidden;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  25% {
+    visibility: visible;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    visibility: visible;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    visibility: visible;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes show {
+  0% {
+    visibility: hidden;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  25% {
+    visibility: visible;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    visibility: visible;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    visibility: visible;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.admin-modal-container {
+  position: fixed;
+  z-index: 8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.admin-modal-content,
+.edit-modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  padding: 0;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+.admin-modal-content .close-edit-modal,
+.edit-modal-content .close-edit-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.admin-modal-content .close-edit-modal i,
+.edit-modal-content .close-edit-modal i {
+  color: var(--text-color);
+  font-size: 24px;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.admin-modal-content .close-edit-modal i:hover,
+.edit-modal-content .close-edit-modal i:hover {
+  color: black;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/*End Modal */
+/*STYLIZING THE FORM CONTAINER @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.admin-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin-form-container {
+  padding: 10px;
+}
+
+.first-div,
+.edit-first-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.edit-first-div {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.img-div,
+.inputs-div,
+.edit-inputs-div {
+  width: 100%;
+}
+
+/*End Stylizing the Form Container */
+/* STYLIZING THE IMG CONTAINER @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* HIDE THE DEFAULT BTN */
+.admin-add-img > input::-webkit-file-upload-button {
+  display: none;
+}
+
+/* STYLIZING A NEW INPUT BTN*/
+.admin-add-img > input {
+  width: 150px;
+  padding: 5px 10px;
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: #002845;
+  background: #002845;
+  z-index: 8;
+}
+
+.admin-input::before {
+  content: "Select a file";
+  padding: 10px;
+  margin: auto;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-user-select: none;
+}
+
+/* IMG CONTAINER */
+.admin-add-img {
+  position: relative;
+  height: 42%;
+  overflow: hidden;
+  background-color: #e6e6e6;
+  border-radius: var(--border-btn);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.admin-add-img > img {
+  position: absolute;
+  width: 30%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+/*End Stylizing the Img Container */
+/* STYLIZING THE INPUTS @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.all-inputs-containers {
+  margin: 10px 20px;
+}
+
+.all-inputs-containers > input,
+.all-inputs-containers > textarea {
+  padding: 10px 5px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  border: 1px solid #811e234b;
+  margin: 5px 0 5px 0;
+  color: var(--text1-color);
+}
+
+.all-inputs-containers > input:focus,
+.all-inputs-containers > textarea:focus {
+  border: 1px solid #811e23;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea::-webkit-input-placeholder {
+  font-family: "Libre Franklin", sans-serif;
+  color: var(--text1-color);
+}
+
+.all-labels,
+.all-num-labels {
+  text-align: left;
+  font-size: 14px;
+  /* margin: 10px 0px; */
+}
+
+/* NUMBER INPUTS */
+.number-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px 10px 10px 20px;
+  /* padding: 10px; */
+}
+
+.all-num-labels {
+  width: 50%;
+  text-align: start;
+}
+
+.all-num {
+  width: 50%;
+  text-align: end;
+}
+
+.all-num input {
+  width: 40%;
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  border: 1px solid #811e234b;
+  margin: 5px 0 10px 0;
+}
+
+.all-num input:focus {
+  border: 1px solid #811e23;
+  width: 40%;
+}
+
+.all-num span {
+  padding: 0 10px 0;
+  font-size: 14px;
+}
+
+/* REMOVE THE DEFAULT BTN*/
+.all-num input::-webkit-outer-spin-button,
+.all-num input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.all-num input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/*End Stylizing the Inputs */
+/* STYLIZING THE SUBMIT BTN @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.second-div,
+.edit-first-div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.edit-first-div {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* ADD BTN */
+.submit-card {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #002845;
+  border-radius: var(--border-btn);
+  background-color: transparent;
+  margin: 10px 0 10px;
+  cursor: pointer;
+  color: #002845;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.submit-card:hover {
+  background-color: #002845;
+  color: white;
+}
+/*# sourceMappingURL=AdminCards.css.map */

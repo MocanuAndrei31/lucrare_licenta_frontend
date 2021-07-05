@@ -1,0 +1,113 @@
+.sidebar-search-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sidebar-search {
+  position: relative;
+}
+
+.sidebar-search > div > i {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: var(--text2-color);
+  cursor: pointer;
+}
+
+.sidebar-search .sidebar-search-input {
+  width: 90%;
+  border: none;
+  border-bottom: 0.5px solid #d4d4d49e;
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--text2-color);
+  background-color: white;
+  padding: 5px;
+}
+
+.sidebar-search .sidebar-search-input:focus {
+  font-size: 14px;
+}
+
+.sidebar-search .sidebar-search-input::-webkit-input-placeholder {
+  color: var(--text2-color);
+  font-weight: bold;
+}
+
+.sidebar-search .sidebar-search-input:-ms-input-placeholder {
+  color: var(--text2-color);
+  font-weight: bold;
+}
+
+.sidebar-search .sidebar-search-input::-ms-input-placeholder {
+  color: var(--text2-color);
+  font-weight: bold;
+}
+
+.sidebar-search .sidebar-search-input::placeholder {
+  color: var(--text2-color);
+  font-weight: bold;
+}
+
+.sidebar-search-res-container {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 10px 0;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.sidebar-search-res-container .sidebar-search-res > ul {
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-search-res-container .sidebar-search-res > ul > li > a {
+  padding: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: var(--text2-color);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.sidebar-search-res-container .sidebar-search-res > ul > li > a:hover {
+  color: #002845;
+}
+
+.sidebar-search-res-container .search-loading {
+  color: var(--text2-color);
+}
+
+.dropdown-links {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 12px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  color: var(--text1-color);
+}
+
+.dropdown-links:hover {
+  color: #002845;
+}
+
+@media only screen and (min-width: 860px) {
+  .sidebar-search-container {
+    display: none;
+  }
+}
+/*# sourceMappingURL=SideBarSearch.css.map */

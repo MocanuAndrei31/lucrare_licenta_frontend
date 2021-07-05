@@ -1,0 +1,238 @@
+// SIDEBAR BODY
+.open-sidebar-container {
+  position: fixed;
+  z-index: 8;
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 95px;
+}
+
+.sidebar-content,
+.open-sidebar-content {
+  position: fixed;
+  z-index: 6;
+  height: 100vh;
+  width: 200px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s ease;
+}
+
+.sidebar-search {
+  width: 100%;
+}
+
+.open-sidebar-content {
+  > i {
+    visibility: visible;
+  }
+}
+
+// SIDEBAR LOGO
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    padding: 20px 10px;
+    width: 105px;
+    height: 100px;
+  }
+}
+
+// SIDEBAR LINKS
+.links-container {
+  width: 100%;
+  height: 60vh;
+  overflow: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-links {
+  width: 100%;
+  height: 200px;
+}
+
+.links-container,
+.open-links-container {
+  > ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    .individual-link {
+      padding: 10px 0;
+    }
+    .individual-link > a {
+      padding: 10px;
+      text-decoration: none;
+      font-size: 14px;
+      cursor: pointer;
+      letter-spacing: 2px;
+      font-weight: 700;
+      color: #777;
+      transition: 0.5s ease;
+      &:hover {
+        color: #002845;
+      }
+    }
+  }
+}
+
+.links-products-container {
+  > ul {
+    list-style: none;
+    padding: 0;
+  }
+  .products-list {
+    padding: 0 6px 0 0;
+    > hr {
+      width: 80%;
+      border: none;
+      border-bottom: 0.5px solid #d4d4d49e;
+    }
+  }
+
+  .dropdown-btn {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: var(--text1-color);
+    transition: 0.5s ease;
+    > span > i {
+      // position: absolute;
+      top: 10px;
+      left: 50px;
+      transition: transform 0.35s;
+      // margin-right: 5px;
+      color: var(--text2-color);
+      transform: rotate(-90deg);
+    }
+    &:hover {
+      color: #002845;
+    }
+    &:hover > span > i {
+      color: #002845;
+    }
+    .rotate-subArrow > i {
+      transform: rotate(0deg);
+    }
+  }
+  .open-subLinks,
+  .close-subLinks {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    > li {
+      padding: 5px 0;
+    }
+    > li > a {
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-decoration: none;
+      color: var(--text1-color);
+      list-style: none;
+      &:hover {
+        color: #002845;
+      }
+    }
+  }
+  .close-subLinks {
+    display: none;
+  }
+}
+
+.open-dropdown-container {
+  height: 250px;
+}
+
+.close-dropdown-container {
+  overflow: hidden;
+  height: 0;
+}
+
+.sidebar-btnn {
+  border: 1px solid #002845;
+  width: 120px;
+  height: 30px;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background-color: #002845;
+  }
+  > a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 2px;
+    color: #777;
+    transition: 0.5s ease;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+// SIGNIN BTN
+.sidebar-btn {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0px;
+  background-color: #fff;
+}
+
+// RESPONSIVENESS
+@media only screen and (min-width: 860px) {
+  .sidebar-profile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .sidebar-content {
+    display: none;
+    > i {
+      visibility: visible;
+    }
+  }
+  .sidebar-content,
+  .open-sidebar-content {
+    top: 95px;
+    height: calc(100vh - 95px);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .links-container {
+    height: 50vh;
+    > ul {
+      padding-bottom: 100px;
+    }
+  }
+
+  .sidebar-btn {
+    height: 80px;
+  }
+}
